@@ -1,0 +1,9 @@
+id: surrealdb.query_ready
+category: database
+severity: critical
+uses_tools:
+  - surrealdb.query
+success_criteria:
+  - query_successful == true
+failure_action:
+  - mark_runtime_degraded
