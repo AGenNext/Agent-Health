@@ -1,0 +1,9 @@
+id: kubernetes.nodes_ready
+category: kubernetes
+severity: critical
+uses_tools:
+  - kubernetes.get_nodes
+success_criteria:
+  - all_nodes_ready == true
+failure_action:
+  - block_deployment
